@@ -45,3 +45,19 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+[YAML front matter](https://assemble.io/docs/YAML-front-matter.html).
+
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+
+[CSS Variables in Astro](https://docs.astro.build/en/guides/styling/#css-variables).
+
+## Add global styles to `.astro` file
+
+Import the stylesheet into the frontmatter of the `.astro` file.
+
+```yaml
+---
+import '../styles/global.css'
+---
+```
