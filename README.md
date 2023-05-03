@@ -46,11 +46,23 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-[YAML front matter](https://assemble.io/docs/YAML-front-matter.html).
+## Interesting Links
 
-[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+[YAML front matter](https://assemble.io/docs/YAML-front-matter.html)
 
-[CSS Variables in Astro](https://docs.astro.build/en/guides/styling/#css-variables).
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+
+[CSS Variables in Astro](https://docs.astro.build/en/guides/styling/#css-variables)
+
+[Refactoring Article](https://refactoring.com/)
+
+[Component Base Design Article](https://www.droptica.com/blog/component-based-design/)
+
+[Semantic HTML Tags Article](https://www.dofactory.com/html/semantics)
+
+[Mobile First Design Article](https://www.mobileapps.com/blog/mobile-first-design)
+
+[Client-Side Scripts in Astro](https://docs.astro.build/en/guides/client-side-scripts/)
 
 ## Add global styles to `.astro` file
 
