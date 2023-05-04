@@ -1,4 +1,6 @@
 ---
+layout: ../../layouts/MarkdownLayout.astro
+
 title: 'Markdown Post 2'
 pubDate: 2022-07-01
 description: 'This is the second post.'

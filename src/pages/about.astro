@@ -1,28 +1,14 @@
 ---
-import '../styles/global.css'
-import Navigation from '../components/Navigation.astro'
-
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Build a Blog</title>
-	</head>
-	<body>
-    <Navigation />
+<BaseLayout>
+	<h1>About Page</h1>
 
-		<h1>About Page</h1>
-
-		<p>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-			dignissimos earum voluptatum tempore reprehenderit voluptatem
-			incidunt aliquam error consequatur! Doloribus maxime adipisci
-			tenetur obcaecati architecto consequuntur quod harum, perspiciatis
-			cupiditate.
-		</p>
-	</body>
-</html>
+	<p>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dignissimos
+		earum voluptatum tempore reprehenderit voluptatem incidunt aliquam error
+		consequatur! Doloribus maxime adipisci tenetur obcaecati architecto
+		consequuntur quod harum, perspiciatis cupiditate.
+	</p>
+</BaseLayout>

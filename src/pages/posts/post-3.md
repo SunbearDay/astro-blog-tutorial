@@ -1,5 +1,6 @@
 ---
-title: 'Markdown Post 2'
+layout: ../../layouts/MarkdownLayout.astro
+title: 'Markdown Post 3'
 pubDate: 2022-07-01
 description: 'This is the third post.'
 author: 'Astro Learner'

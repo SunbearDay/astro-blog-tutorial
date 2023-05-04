@@ -1,27 +1,25 @@
 ---
-import '../styles/global.css'
-
-import Navigation from '../components/Navigation.astro'
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Build a Blog</title>
-	</head>
-	<body>
-    <Navigation />
-    
-		<h1>Astro Build a Blog</h1>
+<BaseLayout>
+	<h1>Astro Build a Blog</h1>
 
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Repellendus nulla doloribus consequatur velit mollitia ut molestiae
-			asperiores sint. Iste deserunt dolore, quia voluptates similique
-			harum expedita pariatur eius repudiandae odit.
-		</p>
-	</body>
-</html>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+		nulla doloribus consequatur velit mollitia ut molestiae asperiores sint.
+		Iste deserunt dolore, quia voluptates similique harum expedita pariatur
+		eius repudiandae odit.
+	</p>
+
+	<button>Click Me</button>
+
+	<script>
+		let button = document.querySelector("button")
+		if (button) {
+			button.addEventListener("click", () => {
+				alert("You've clicked me!")
+			})
+		}
+	</script>
+</BaseLayout>

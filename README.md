@@ -64,6 +64,16 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 [Client-Side Scripts in Astro](https://docs.astro.build/en/guides/client-side-scripts/)
 
+[Astro Layout Components](https://docs.astro.build/en/core-concepts/layouts/)
+
+[Markdown Layouts in Astro](https://docs.astro.build/en/guides/markdown-content/#frontmatter-layout)
+
+[Markdown Layout Props](https://docs.astro.build/en/core-concepts/layouts/#markdown-layout-props)
+
+[Introduction to YAML](https://dev.to/paulasantamaria/introduction-to-yaml-125f)
+
+[Nesting Layouts in Astro](https://docs.astro.build/en/core-concepts/layouts/#nesting-layouts)
+
 ## Add global styles to `.astro` file
 
 Import the stylesheet into the frontmatter of the `.astro` file.
@@ -72,4 +82,27 @@ Import the stylesheet into the frontmatter of the `.astro` file.
 ---
 import '../styles/global.css'
 ---
+```
+
+## Component Props
+
+```js
+---
+// Usage: <GreetingHeadline greeting="Howdy" name="Partner" />
+const { greeting, name } = Astro.props;
+---
+<h2>{greeting}, {name}!</h2>
+```
+
+We can also define a Props interface when using TypeScript.
+
+```js
+---
+interface Props {
+  name: string;
+  greeting?: string;
+}
+const { greeting, name } = Astro.props;
+---
+<h2>{greeting}, {name}!</h2>
 ```
