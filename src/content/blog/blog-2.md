@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
 title: 'Markdown Blog 2'
 description: 'This is the second blog.'
 author: 'Astro Learner'

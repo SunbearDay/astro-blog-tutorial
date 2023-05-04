@@ -1,6 +1,6 @@
 # Astro Starter Kit: Minimal
 
-```
+```shell
 npm create astro@latest -- --template minimal
 ```
 
@@ -14,7 +14,7 @@ npm create astro@latest -- --template minimal
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```
+```shell
 /
 ├── public/
 ├── src/
@@ -106,3 +106,9 @@ const { greeting, name } = Astro.props;
 ---
 <h2>{greeting}, {name}!</h2>
 ```
+
+We're using `content collections`, so we need to adjust our code.
+
+1. Create a `src/content/blog` directory.
+2. Move the files in `src/pages/posts/*.*` to our new directory: `src/content/blog`.
+3. Create `config.ts` in `src/content`.

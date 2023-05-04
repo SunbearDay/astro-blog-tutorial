@@ -1,7 +1,7 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from "../layouts/BaseLayout.astro"
 
-import { getCollection } from 'astro:content';
 const blogEntries = await getCollection('blog');
 ---
 
@@ -16,6 +16,21 @@ const blogEntries = await getCollection('blog');
 	</p>
 
 	<button>Click Me</button>
+
+  <section>
+    <h2>Blog Entries</h2>
+
+    <ul>
+      {
+        blogEntries.map((blog) => (
+          <li>
+            <a href={`/posts/${blog.slug}`}>{blog.data.title}</a>
+          </li>
+          // <BlogPost url={"/posts/" + post.slug} title={post.data.title} />
+        ))
+      }
+    </ul>
+  </section>
 
 	<script>
 		let button = document.querySelector("button")
